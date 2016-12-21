@@ -1,0 +1,156 @@
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 80px;
+  background: -moz-linear-gradient(-90deg, #003471, #448CCB);
+ background: -webkit-gradient(linear, left top, left bottom, from(#003471), to(#448CCB));
+}
+
+/* The element at the top of the page right after the fixed navigation bar
+   MUST have sufficient top margin or else it will be covered by the bar */
+.content {
+  margin-top: 20px;
+}
+.fixed-nav-bar div img{
+    width: 50px;
+    padding-left: 10px;
+}
+
+
+/* Example responsive navigation menu  */
+.fixed-nav-bar li, .fixed-nav-bar a { 
+  height: 50px;
+  line-height: 50px;
+}
+.menu {
+  width: 100%;
+  margin: 15px auto;
+}
+.menu a, .menu a:visited {
+  color: #ffffff;
+}
+.menu a:hover, .menu a:target {
+  color: #ebebeb;
+}
+.menu-items {
+  float: right;
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.menu-items li a {
+  padding: 0 10px;
+}
+.sitename {
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+a.sitename, a:visited.sitename {
+  font-family: Rockwell, Georgia, "Times New Roman", Times, serif;
+  font-size: 38px;
+  font-weight: bolder;
+  color: #fff;
+  text-shadow: rgba(0,0,0,0.5) -4px 0, rgba(0,0,0,0.3) 0 -3px, rgba(255,255,255,0.5) 0 1px, rgba(0,0,0,0.3) -5px -3px;
+    position: relative;
+    top: -9px;
+}
+.menu-items li {
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.menu-items a {
+  text-decoration: none;
+}
+.show, .hide {
+  display: none;
+  padding-left: 15px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center left;
+  color: #dde1e2;
+}
+.show {
+  background-image: url(assets/down-arrow-icon.png);
+}
+.hide {
+  background-image: url(assets/up-arrow-icon.png);
+}
+
+@media only screen and (max-width: 800px) {
+  .menu { 
+    position: relative;
+    width: 100%;
+  }
+  .sitename {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    margin-left: 0px;
+  }
+  .menu-items {
+    display: none; 
+    width: 100%;
+    margin-top: 50px;
+    background-color: #008378;
+  }
+  .menu-items li {
+    display: block;
+    text-align: center;
+  }
+  .show, .hide {  
+    position: absolute;
+    top: 0;
+    right: 15px;
+  }
+  .show {
+    display: inline-block;
+  }
+  .hide {
+    display: none;
+  }
+  #menu:target .show {
+    display: none;
+  }
+  #menu:target .hide, #menu:target .menu-items {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 220px) {
+  .sitename, .show, .hide {
+    font-size: 14px;
+  }
+}
+
+/* =============================================================================
+  CUSTOM WEB SCROLL BAR
+============================================================================= */
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-image: -webkit-gradient(linear,
+									   left bottom,
+									   left top,
+									   color-stop(0.44, rgb(0,52,113)),
+									   color-stop(0.72, rgb(68,140,203)),
+									   color-stop(0.86, rgb(68,140,203)));
+}

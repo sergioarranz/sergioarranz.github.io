@@ -1,0 +1,884 @@
+/**
+ * =================================================================== 
+ *
+ *  Curriculum Web Sergio Arranz v1.0 Main Stylesheet
+ *  09-12-2016
+ *  ------------------------------------------------------------------
+ *  ÍNDICE:
+ *  01. Imports de fuentes e iconos
+ *  02. Estilos generales
+ *  03. Scrollbar vertical personalizadoy botón de volver arriba
+ *  04. Barra de navegación fixed
+ *  05. Galeria/Slider con 3 inputs
+ *  06. Estilos - Sobre mi  
+ *  07. Estilos - Intereses y Aptitudes 
+ *  08. Estilos - Paralax 
+ *  09. Estilos - Timeline (Experiencia académica y laboral) 
+ *  10. Estilos - Portfolio
+ *  11. Estilos - Mapa y contacto
+ *  12. Estilos - Footer
+ *
+ * =================================================================== 
+ */
+
+
+/** 
+ * ===================================================================
+ * 01. Imports de fuentes e iconos
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url("../font-awesome/css/font-awesome.css");
+
+/** 
+ * ===================================================================
+ * 02. Estilos generales
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: #2e2e2e;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  text-align: center;
+  font-size: 80px;
+  padding-top: 196px;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.grey-bg {
+  background: #f1f2f7;
+}
+
+.text-center {
+  text-align: center
+}
+
+
+/** 
+ * ===================================================================
+ * 03. Scrollbar vertical personalizadoy botón de volver arriba
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #d9d9d9;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #dedede;
+}
+
+.topHome {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 5;
+  background: #40474c;
+}
+
+.topHome .fa-2x {
+  font-size: 20px;
+  color: #fff;
+  margin: 4px;
+}
+
+/** 
+ * ===================================================================
+ * 04. Barra de navegación fixed
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 80px;
+  background: #E4E4E4;
+  box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 1);
+}
+
+.fixed-nav-bar li,
+.fixed-nav-bar a {
+  height: 50px;
+  line-height: 50px;
+}
+
+.menu {
+  width: 100%;
+  margin: 15px auto;
+}
+
+.menu a,
+.menu a:visited {
+  color: #666666;
+}
+
+.menu a:hover,
+.menu a:target {
+  color: #333333;
+}
+
+.menu-items {
+  float: right;
+  display: inline-block;
+  padding-right: 20px;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 15px;
+}
+
+.menu-items li a {
+  padding: 0 10px;
+}
+
+.menu-items li {
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.menu-items a {
+  text-decoration: none;
+}
+
+/** 
+ * ===================================================================
+ * 05. Galeria/Slider con 3 inputs
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+.galeria {
+  margin: 90px auto 0;
+  width: 88%;
+  transform-style: preserve-3d;
+  height: 80%;
+}
+
+.galeria:before {
+  content: '';
+  padding-top: 56.25%;
+  display: inline-block;
+  width: 0;
+}
+
+.card {
+  background-size: 2px 2px, cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, .5);
+  border-radius: 3px;
+  font-family: 'Great Vibes';
+}
+
+.slider-1 {
+  background-image: url(), url(../images/slider/tres.PNG);
+}
+
+.slider-2 {
+  background-image: url(), url(../images/slider/dos.PNG);
+}
+
+.slider-3 {
+  background-image: url(), url(../images/slider/uno.PNG);
+}
+
+.subtitle {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 70px;
+}
+
+.card p {
+  text-align: center;
+  color: #fff;
+  font-size: 5vw;
+  line-height: 1.3;
+  margin-top: 3vh;
+}
+
+input {
+  visibility: hidden;
+}
+
+.label-slider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  color: #fff;
+  font-size: 4vw;
+  line-height: 15vh;
+  text-align: right;
+  height: 15vh;
+  width: 4vw;
+  cursor: pointer;
+  opacity: .2;
+  transition: .5s linear;
+}
+
+.otra+.otra,
+#first:checked~.slider-3 .afin,
+#second:checked~.slider-1 .afin,
+#third:checked~.slider-2 .afin {
+  right: 0;
+  text-align: left;
+}
+
+#first:checked~.slider-1 .otra,
+#second:checked~.slider-2 .otra,
+#third:checked~.slider-3 .otra {
+  display: block;
+}
+
+#first:checked~.slider-1 .afin,
+#second:checked~.slider-2 .afin,
+#third:checked~.slider-3 .afin,
+:not(:checked)~.otra {
+  display: none;
+}
+
+.card:hover .label-slider {
+  animation: pulso 1.5s infinite alternate;
+}
+
+.card:hover .label-slider+.label-slider {
+  animation-delay: .5s;
+}
+
+.card:hover .label-slider:hover {
+  color: #333333;
+  opacity: 1;
+}
+
+#first:checked~.slider-2,
+#second:checked~.slider-3,
+#third:checked~.slider-1 {
+  animation: 1s fuera-izq;
+  animation-fill-mode: forwards;
+  transform-origin: center left;
+  z-index: 2;
+}
+
+#first:checked~.slider-3,
+#second:checked~.slider-1,
+#third:checked~.slider-2 {
+  animation: 1.5s fuera-dch;
+  animation-fill-mode: forwards;
+  transform-origin: center right;
+  z-index: 2;
+}
+
+#first:checked~.slider-1,
+#second:checked~.slider-2,
+#third:checked~.slider-3 {
+  animation: 2s central;
+  animation-fill-mode: forwards;
+  transform-origin: center center;
+  z-index: 3;
+}
+
+@keyframes fuera-izq {
+  0% {
+    transform: scale(1) translatex(0%);
+  }
+  70% {
+    transform: scale(.9) translatex(-100%);
+  }
+  100% {
+    transform: scale(.9) translatex(-7%);
+  }
+}
+
+@keyframes fuera-dch {
+  0% {
+    transform: scale(1) translatex(0%);
+  }
+  70% {
+    transform: scale(.9) translatex(100%);
+  }
+  100% {
+    transform: scale(.9) translatex(7%);
+  }
+}
+
+@keyframes central {
+  0% {
+    transform: scale(.8);
+    z-index: 1;
+  }
+  80% {
+    transform: scale(.5);
+    z-index: 3;
+  }
+  100% {
+    transform: scale(1);
+    z-index: 3;
+  }
+}
+
+@keyframes pulso {
+  50% {
+    opacity: .7;
+  }
+}
+/** 
+ * ===================================================================
+ * 06. Estilos - Sobre mi 
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+.about {
+  padding: 30px 0;
+  margin-bottom: 4px;
+  box-shadow: 0px 3px 3px 0px rgba( 1, 2, 2, 0.15);
+}
+
+.about h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #a8aab3;
+  letter-spacing: 3px;
+  font-size: 35px;
+}
+
+.grey-bg h1 {
+  margin-top: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.grey-bg p {
+  margin-top: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.son-box {
+  margin-right: -15px;
+  margin-left: -15px
+}
+
+.son-box:before,
+.son-box:after {
+  display: table;
+  content: " "
+}
+
+.son-box:after {
+  clear: both
+}
+
+.mediacol {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 50%;
+  float: left
+}
+
+.cv-photo {
+  border-radius: 50%;
+  width: 20%;
+  margin: 2% 70%;
+}
+
+/** 
+ * ===================================================================
+ * 07. Estilos - Intereses y Aptitudes 
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+.interest .txtHead {
+  background: #fff;
+  padding: 20px 10px;
+}
+
+.interest .txtHead .fa {
+  font-size: 58px;
+  color: #5E5E5E;
+}
+
+.txtHead h1 {
+  text-align: center;
+}
+
+.secPad {
+  padding: 60px 0;
+}
+
+
+.box {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto
+}
+
+.box:before,
+.box:after {
+  display: table;
+  content: " "
+}
+
+.box:after {
+  clear: both
+}
+
+.interest-box {
+  width: 65%;
+  margin-left: 22%;
+}
+
+.interest-son-box {
+  width: 90%;
+}
+
+.terciocol {
+  width: 33.3%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  float: left
+}
+
+.interest-art p {
+  background-color: #E4E4E4;
+  font-size: 15px;
+  color: #777777;
+  padding: 20px;
+  margin: 0px;
+}
+
+/** 
+ * ===================================================================
+ * 08. Estilos - Paralax 
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+.paralax {
+  padding-top: 0px;
+  background-image: url('../images/paralax.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.paralax-blink {
+  padding: 30px 0;
+  background-color: rgba(0, 0, 0, 0.37);
+  color: #FDFDFD !important;
+}
+
+/** 
+ * ===================================================================
+ * 09. Estilos - Timeline (Experiencia académica y laboral) 
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+.centertimeline {
+  padding: 20px 117px;
+}
+
+.timeline {
+  list-style: none;
+  margin: 50px 0 30px 120px;
+  padding-left: 30px;
+  border-left: 8px solid #eee9dc;
+  font-family: 'Raleway', sans-serif;
+}
+
+.timeline li {
+  margin: 40px 0;
+  position: relative;
+}
+
+.timeline p {
+  margin: 0 0 15px;
+}
+
+.date {
+  margin-top: -10px;
+  top: 50%;
+  left: -250px;
+  font-size: 0.95em;
+  line-height: 20px;
+  position: absolute;
+}
+
+.circle {
+  margin-top: -10px;
+  top: 50%;
+  left: -44px;
+  width: 10px;
+  height: 10px;
+  background: #48b379;
+  border: 5px solid #eee9dc;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+}
+
+.content {
+  max-height: 20px;
+  padding: 50px 20px 0;
+  border-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0.5em;
+  position: relative;
+}
+
+.content:before,
+.content:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  position: absolute;
+  right: 100%;
+}
+
+.content:before {
+  border-right-color: inherit;
+  border-width: 20px;
+  top: 50%;
+  margin-top: -20px;
+}
+
+.content:after {
+  border-right-color: #f1f2f7;
+  border-width: 17px;
+  top: 50%;
+  margin-top: -17px;
+}
+
+.content p {
+  max-height: 0;
+  color: transparent;
+  text-align: justify;
+  overflow: hidden;
+}
+
+.label-t {
+  font-weight: bold;
+  font-size: 1.3em;
+  position: absolute;
+  z-index: 100;
+  cursor: pointer;
+  top: 20px;
+  transition: transform 0.2s linear;
+}
+
+.radio {
+  display: none;
+}
+
+.radio:checked+.relative label {
+  cursor: auto;
+  transform: translateX(42px);
+}
+
+.radio:checked+.relative .circle {
+  background: #f98262;
+}
+
+.radio:checked~.content {
+  max-height: 180px;
+  border-color: #BFBFBF;
+  margin-right: 20px;
+  transform: translateX(20px);
+  transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
+}
+
+.radio:checked~.content p {
+  max-height: 200px;
+  color: #2e2e2e;
+  transition: color 0.3s linear 0.3s;
+}
+
+.padon {
+  box-sizing: content-box;
+}
+
+/** 
+ * ===================================================================
+ * 10. Estilos - Portfolio
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+.portfolio-box {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto
+}
+
+.no_padding {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.single_image {
+  margin-right: 3px;
+  position: relative;
+  transition: all 1s;
+}
+
+.single_image img {
+  width: 100%;
+}
+
+.single_image:hover div.image_overlay {
+  opacity: 1;
+}
+
+.image_overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(76, 76, 76, 0.6);
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.image_overlay a {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.image_overlay h2 {
+  position: absolute;
+  bottom: 28px;
+  left: 20px;
+  font-size: 25px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.image_overlay h4 {
+  position: absolute;
+  bottom: 11px;
+  left: 20px;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.last_padding {
+  padding-right: 0px;
+}
+
+.pad_top {
+  padding-top: 2px;
+}
+
+/** 
+ * ===================================================================
+ * 11. Estilos - Mapa y contacto
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+.map-block {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.map-block iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
+
+form {
+  max-width: 600px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+form input,
+form textarea {
+  border: 0;
+  outline: 0;
+  padding: 1em;
+  display: block;
+  background: #f1f2f7;
+  width: 100%;
+  margin-top: 1em;
+  font-family: 'Merriweather', sans-serif;
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  resize: none;
+}
+
+form input:focus,
+form textarea:focus {
+  -moz-box-shadow: 0 0px 2px #40474c !important;
+  -webkit-box-shadow: 0 0px 2px #40474c !important;
+  box-shadow: 0 0px 2px #40474c !important;
+}
+
+form #input-submit {
+  color: white;
+  background: #40474c;
+  cursor: pointer;
+}
+
+form #input-submit:hover {
+  -moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+  -webkit-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+  box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+}
+
+form textarea {
+  height: 150px;
+}
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right {
+  width: 50%;
+}
+
+.left {
+  margin-right: 2%;
+}
+
+
+/* Clearfix */
+
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf input {
+  visibility: visible;
+}
+
+/** 
+ * ===================================================================
+ * 12. Estilos - Footer
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+
+footer {
+  border-top: 1px solid #e5e5e5;
+  padding: 45px 0;
+  background: #fff;
+}
+
+.social a:hover {
+  color: #40474c;
+}
+
+.social a {
+  font-size: 32px;
+  margin: 0 10px;
+  color: #c7c7c7;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.footer-copyright {
+  margin-top: 40px;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-weight: lighter;
+}
