@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head> <!-- Cabecera del documento con los estilos a cargar en la web -->
+        <meta charset="utf-8" />
+            <title>Sergio Arranz</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <script src="js/jquery-1.11.0.min.js"></script>
+    </head>
+
+    <body> <!-- Cuerpo -->
+
+                <header> <!-- Header con barra de navegación fixed -->
+                    <div>
+                        <h1 id="logo">Programación</h1>
+                        <nav>
+                            <ul>
+                                <li><a href="#php">PHP</a></li>
+                                <li><a href="#csharp">C#</a></li>
+                                <li><a href="#ajax">AJAX</a></li>
+                                <li><a href="#javascript">JavaScript</a></li>
+                                <li><a href="#perl">Perl</a></li>
+                                <li><a href="#c">C</a></li>
+                                <li><a href="#java">Java</a></li>
+                                <li><a href="#c++">C++</a></li>
+                                <li><a href="#python">Python</a></li>
+                                <li><a href="#swift">Swift</a></li>                   
+                            </ul>
+                        </nav>
+                    </div>
+                </header> <!-- Fin header -->
+
+                <div id="slider"> <!-- Slider con 3 imágenes distintas -->
+                    <div class="slider1"></div>
+                    <div class="slider2"></div>
+                    <div class="slider3"></div>
+                </div> <!-- Fin slider -->
+
+                <section> <!-- Sección con los 10 lenguajes de programación -->
+                    <h2>Los 10 lenguajes de programación más usados <i class="fa fa-desktop" aria-hidden="true"></i></h2> <!-- Salta warning en el validador en caso de poner h1 o nada -->
+                        
+                                <!-- *********************  PHP **************************-->
+                                <article id="php"> <!-- Comienzo artículo -->
+                                            <img src="images/icons/php-logo.jpg" alt="php"> 
+                                        <div> <!-- Textos del artículo -->
+                                            <h2>1. PHP</h2>
+                                                <div class="paragraph">
+                                                    <p>PHP usa una mezcla entre interpretación y compilacion para intentar ofrecer a los programadores la mejor mezcla entre rendimiento y flexibilidad.</p>
+                                                        <div>
+                                                            <a class="btn-web" href="http://php.net/">WEB OFICIAL</a> <input type="checkbox" class="read-more-state" id="post-1" />
+                                                                <span class="read-more-target">
+                                                                    <iframe class="embed-content" src="https://www.youtube.com/embed/7TF00hJI78Y?html5=1" allowfullscreen></iframe>
+                                                                </span>
+                                                            <label for="post-1" class="read-more-trigger btn-web"></label> 
+                                                        </div>
+                                                </div>
+
+                                                <div class="features">
+                                                    <ul>
+                                                        <li>Mejor soporte para la programación orientada a objetos, que en versiones anteriores era extremadamente rudimentario.</li>
+                                                        <li>Mejoras de rendimiento</li>
+                                                        <li>Mejor soporte para MySQL con extensión completamente reescrita</li>
+                                                        <li>Mejor soporte a XML (XPath, DOM, etc.)</li>
+                                                        <li>Soporte nativo para SQLite</li>
+                                                        <li>Soporte integrado para SOAP</li>
+                                                        <li>Iteradores de datos</li>
+                                                        <li>Manejo de excepciones</li>
+                                                        <li>Mejoras con la implementación con Oracle</li>
+                                                    </ul>
+                                                </div>
+
+                                        </div> <!-- Fin Textos de artículo-->
+                                        <div class="clear"></div>
+
+                                                              
+                                </article> <!-- Fin artículo -->
+                                <div class="clear"></div>
+
+                                <!-- *********************  C# **************************-->
+                                <article id="csharp"> <!-- Comienzo artículo -->
+                                            <img src="images/icons/c_sharp_logo.jpg" alt="C Sharp">
+                                        <div> <!-- Textos del artículo -->
+                                            <h2>2. C#</h2>
+                                                <div class="paragraph">
+                                                    <p>C# es un lenguaje de propósito general orientado a objetos creado por Microsoft para su plataforma .NET.
+                                                    Su sintaxis básica deriva de C/C++ y utiliza el modelo de objetos de la plataforma .NET el cual es similar al de Java aunque incluye mejoras derivadas de otros lenguajes. C# fue diseñado para combinar el control a bajo nivel de lenguajes como C y la velocidad de programación de lenguajes como Visual Basic.</p>
+                                                        <div>
+                                                            <a class="btn-web" href="http://php.net/">WEB OFICIAL</a> <input type="checkbox" class="read-more-state" id="post-2" />
+                                                                <span class="read-more-target">
+                                                                    <iframe class="embed-content" src="https://www.youtube.com/embed/HHWTzud5Vwc" allowfullscreen></iframe>
+                                                                </span>
+                                                            <label for="post-2" class="read-more-trigger btn-web"></label> 
+                                                        </div>
+                                                </div>
+                                            
+                                                <div class="features">
+                                                    <ul>
+                                                        <li>Sencillez de uso</li>
+                                                        <li>Modernidad</li>
+                                                        <li>Orientado a objetos</li>
+                                                        <li>Orientado a componentes</li>
+                                                        <li>Recolección de basura</li>
+                                                        <li>Seguridad de tipos</li>
+                                                    </ul>
+                                                </div>
+                                        </div> <!-- Fin Textos de artículo-->
+                                                            
+                                </article> <!-- Fin artículo -->
+                                <div class="clear"></div>
+
+                                <!-- *********************  AJAX **************************-->
+                                <article id="ajax"> <!-- Comienzo artículo -->
+                                        <img src="images/icons/AJAX_logo_by_gengns.jpg" alt="ajax">
+                                        <div> <!-- Textos del artículo -->
+                                            <h2>3. AJAX</h2>
+
+                                                <div class="paragraph">
+                                                <p>AJAX no es un lenguaje exactamente su nombre viene dado por el acrónimo de Asynchronous JavaScript And XML y es posiblemente la mayor novedad en cuanto a programación web en estos últimos años.</p>
+                                                <div><a class="btn-web" href="https://es.wikipedia.org/wiki/AJAX">WEB OFICIAL</a> <a class="btn-web" href="#"><i class="fa fa-arrow-up fa-1" aria-hidden="true"></i></a></div>
+                                                </div>
+
+                                                <div class="features">
+                                                    <ul>
+                                                        <li>Las aplicaciones son más interactivas, responden a las interacciones del usuario más rápidamente, al estilo aplicaciones de escritorio.</li>
+                                                        <li>Estas aplicaciones tienen un aspecto (look and feel) muy similar a las aplicaciones de escritorio tradicionales sin depender de plugins o características específicas de los navegadores.</li>
+                                                        <li>Muchas micro-peticiones, pero el flujo de datos global es inferior</li>
+                                                        <li>Se libera de procesamiento a la parte servidora (se realiza en la parte cliente)</li>
+                                                        <li>AJAX actualiza porciones de la página en vez de la página completa.</li>
+                                                        <li>Seguridad de tipos</li>
+                                                    </ul>
+                                                </div>
+                                        </div> <!-- Fin Textos de artículo-->
+                                        <div class="embed-content"> <!-- Video de Youtube embed -->
+                                                <iframe src="https://www.youtube.com/embed/qqRiDlm-SnY"></iframe>
+                                        </div>                       
+                                </article> <!-- Fin artículo -->
+                                <div class="clear"></div>
+
+                                <!-- *********************  JAVASCRIPT **************************-->
+                                <article id="javascript"> <!-- Comienzo artículo -->
+                                        <img src="images/icons/javascript-logo.jpg" alt="Javascript">
+                                        <div> <!-- Textos del artículo -->
+                                            <h2>4.JavaScript</h2>
+                                                <div class="paragraph">
+                                                <p>Se trata de un lenguaje de programación del lado del cliente, porque es el navegador el que soporta la carga de procesamiento. Gracias a su compatibilidad con la mayoría de los navegadores modernos, es el lenguaje de programación del lado del cliente más utilizado.</p>
+                                                <div><a class="btn-web" href="https://developer.mozilla.org/es/docs/Web/JavaScript">WEB OFICIAL</a> <a class="btn-web" href="#"><i class="fa fa-arrow-up fa-1" aria-hidden="true"></i></a></div>
+                                                </div>
+
+                                                <div class="features">
+                                                    <ul>
+                                                        <li>Es simple, no hace falta tener conocimientos de programación para poder hacer un programa en JavaScript.</li>
+                                                    <li>Maneja objetos dentro de nuestra página Web y sobre ese objeto podemos definir diferentes eventos. Dichos objetos facilitan la programacion de paginas interactivas, a la vez que se evita la posibilidad de ejecutar comandos que puedan ser peligrosos para la maquina del usuario, tales como formateo de unidades, modificar archivos etc.</li>
+                                                    <li>Es dinámico, responde a eventos en tiempo real. Eventos como presionar un botón, pasar el puntero del mouse sobre un determinado texto o el simple hecho de cargar la página o caducar un tiempo. Con esto podemos cambiar totalmente el aspecto de nuestra página al gusto del usuario, evitándonos tener en el servidor un página para cada gusto, hacer calculos en base a variables cuyo valor es determinado por el usuario, etc.</li>
+                                                    </ul>
+                                                </div>
+                                        </div> <!-- Fin Textos de artículo-->
+                                        <div class="embed-content"> <!-- Video de Youtube embed -->
+                                                <iframe src="https://www.youtube.com/embed/Mfmf83XC5Uw"></iframe>
+                                        </div>                       
+                                </article> <!-- Fin artículo -->
+                                <div class="clear"></div>
+
+                                <!-- *********************  PERL **************************-->
+                                <article id="perl"> <!-- Comienzo artículo -->
+                                        <img src="images/icons/onion.jpg" alt="Perl">
+                                            <div> <!-- Textos del artículo -->
+                                                <h2>5. Perl</h2>
+                                                    <div class="paragraph">
+                                                    <p>Perl es la alternativa más popular a PHP, seguramente porque es el lenguaje más antiguo tambien dentro de las alternativas. En internet nos encontramos numerosos recursos que utilizan Perl, muchos de las aplicaciones “open source” requieren tener Perl instalado correctamente. Perl tiene una ventaja y es que es muy flexible, y tambien tiene un gran cantidad de modulos ya escritos.</p>
+                                                    <div><a class="btn-web" href="https://www.perl.org/">WEB OFICIAL</a> <a class="btn-web" href="#"><i class="fa fa-arrow-up fa-1" aria-hidden="true"></i></a></div>
+                                                    </div>
+
+                                                    <div class="features">
+                                                        <ul>
+                                                            <li>Es fácil de usar, aunque es difícil de aprender. Cuando se ha programado en Perl por varias horas, Perl se va a ir haciendo cada vez más fácil de implementar.</li>
+                                                        <li> Existen muy pocas cosas que no se pueden hacer con este lenguaje, por lo que se le puede considerar como un lenguaje que no tiene fronteras.</li>
+                                                        <li>Es rápido de crear, ya que no posee funciones que, aunque sean bastante interesantes, hagan disminuir la velocidad de desarrollo de una aplicación del lenguaje.</li>
+                                                        <li>El lenguaje es feo, siendo esta una de las principales razones para su difícil aprendizaje, aunque esto se compensa con el poder de alcance del lenguaje.</li>
+                                                        </ul>
+                                                    </div>
+                                            </div> <!-- Fin Textos de artículo-->
+                                            <div class="embed-content"> <!-- Video de Youtube embed -->
+                                                    <iframe src="https://www.youtube.com/embed/WEghIXs8F6c"></iframe>
+                                            </div>                       
+                                </article> <!-- Fin artículo -->
+                                <div class="clear"></div>
+
+                                <!-- *********************  C **************************-->
+                                <article id="c"> <!-- Comienzo artículo -->
+                                            <img src="images/icons/c.jpg" alt="C">
+                                        <div> <!-- Textos del artículo -->
+                                            <h2>6. C</h2>
+                                                <div class="paragraph">
+                                                <p>Es un lenguaje de “medio nivel” pero con numerosas características de bajo nivel. Dispone de las estructuras típicas de los lenguajes de alto nivel pero, a su vez, dispone de construcciones del lenguaje que permiten un control a muy bajo nivel.</p>
+                                                <div><a class="btn-web" href="https://www.microsoft.com/es-es/">WEB OFICIAL</a> <a class="btn-web" href="#"><i class="fa fa-arrow-up fa-1" aria-hidden="true"></i></a></div>
+                                                </div>
+
+                                                <div class="features">
+                                                    <ul>
+                                                        <li>Es un lenguaje potente y eficiente, permitiendo obtener programas rápidos y compactos.</li>
+                                                    <li>Proporciona un completo control de cuanto sucede en el interior del ordenador.</li>
+                                                    <li>Permite una amplia libertad de organización del trabajo.</li>
+                                                    <li>Es más complicado de aprender que otros lenguajes de programación como por ejemplo el Pascal.</li>
+                                                    </ul>
+                                                </div>
+                                        </div> <!-- Fin Textos de artículo-->
+                                        <div class="embed-content"> <!-- Video de Youtube embed -->
+                                                <iframe src="https://www.youtube.com/embed/-CpG3oATGIs"></iframe>
+                                        </div>
+                            </article> <!-- Fin artículo -->
+                            <div class="clear"></div>
+
+                            <!-- *********************  JAVA **************************-->
+                            <article id="java"> <!-- Comienzo artículo -->
+                                        <img src="images/icons/java-logo-vector.jpg" alt="Java">
+                                    <div> <!-- Textos del artículo -->
+                                        <h2>7. Java</h2>
+                                            <div class="paragraph">
+                                                <p>Java es un lenguaje de programación de propósito general orientado a objetos desarrollado por Sun Microsystems. También se puede decir que Java es una tecnología que no sólo se reduce al lenguaje sino que además provee de una máquina virtual Java que permite ejecutar código compilado Java, sea cual sea la plataforma que exista por debajo; plataforma tanto hardware, como software (el sistema operativo que soporte ese hardware). El apoyo a esta tecnología viene dado por la gran cantidad de fabricantes que apoyan esta especificación de máquina virtual.</p>
+                                                <div>
+                                                    <a class="btn-web" href="https://www.java.com/es/">WEB OFICIAL</a> <a class="btn-web" href="#"><i class="fa fa-arrow-up fa-1" aria-hidden="true"></i></a>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="features">
+                                                <ul>
+                                                    <li>Simple</li>
+                                                    <li>Orientado a Objetos</li>
+                                                    <li>Tipado estáticamente</li>
+                                                    <li>Distribuido</li>
+                                                    <li>Interpretado</li>
+                                                    <li>Robusto</li>
+                                                    <li>Seguro</li>
+                                                    <li>de Arquitectura Neutral</li>
+                                                    <li>Multihilo</li>
+                                                    <li>con Recolector de basura (Garbage Collector)</li>
+                                                    <li>Portable</li>
+                                                    <li>de Alto Rendimiento: sosobre todo con la aparición de hardware especializado y mejor software</li>
+                                                    <li>Dinámico</li>
+                                                </ul>
+                                            </div>
+                                    </div> <!-- Fin Textos de artículo-->
+                                    <div class="embed-content"> <!-- Video de Youtube embed -->
+                                            <iframe src="https://www.youtube.com/embed/WPvGqX-TXP0"></iframe>
+                                    </div>                       
+                            </article> <!-- Fin artículo -->
+                            <div class="clear"></div>
+
+                            <!-- *********************  C++ **************************-->
+                            <article id="c++"> <!-- Comienzo artículo -->
+                                    <img src="images/icons/c--logo-icon-6.jpg" alt="C++">
+                                        <div> <!-- Textos del artículo -->
+                                            <h2>8. C++</h2>
+                                                <div class="paragraph">
+                                                    <p>C++ es un lenguaje de programación creado por Bjarne Stroustrup en los laboratorios de At&T en 1983. Stroustrup tomó como base el lenguaje de programación más popular en aquella época el cual era C.</p>
+                                                    <div>
+                                                        <a class="btn-web" href="https://sourceforge.net/projects/orwelldevcpp/">WEB OFICIAL</a> <a class="btn-web" href="#"><i class="fa fa-arrow-up fa-1" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="features">
+                                                    <ul>
+                                                        <li>Lenguaje de programación orientado a objetos.</li>
+                                                        <li>Lenguaje muy didáctico, con este lenguaje puedes aprender muchos otros lenguajes con gran facilidad, como C#, Java, Visual Basic, Javascript, PHP, entre otros.</li>
+                                                        <li>Es muy potente en lo que se refiere a creación de sistemas complejos, un lenguaje muy robusto.</li>
+                                                        <li>Actualmente, puede compilar y ejecutar código de C, ya viene con librerías para realizar esta labor.</li>
+                                                    </ul>
+                                                </div>
+                                        </div> <!-- Fin Textos de artículo-->
+                                        <div class="embed-content"> <!-- Video de Youtube embed -->
+                                                <iframe src="https://www.youtube.com/embed/7x9369_-cWc"></iframe>
+                                        </div>                       
+                        </article> <!-- Fin artículo -->
+                        <div class="clear"></div>
+
+                        <!-- *********************  PYTHON **************************-->
+                        <article id="python"> <!-- Comienzo artículo -->
+                                    <img src="images/icons/Python-logo-notext.jpg" alt="Python">
+                                        <div> <!-- Textos del artículo -->
+                                            <h2>9. Python</h2>
+                                                <div class="paragraph">
+                                                    <p>Un lenguaje de programación multiplataforma y multiparadigma, que también es de propósito general. Esto significa que soporta la orientación a objetos, la programación imperativa y funcional. Su simpleza, legibilidad y similitud con el idioma Inglés lo convierten en un gran lenguaje ideal para principiantes.</p>
+                                                    <div>
+                                                        <a class="btn-web" href="http://www.es.python.org/">WEB OFICIAL</a> <a class="btn-web" href="#"><i class="fa fa-arrow-up fa-1" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="features">
+                                                    <ul>
+                                                        <li>Simple</li>
+                                                        <li>Sencillo de Aprender</li>
+                                                        <li>Libre y Fuente Abierta</li>
+                                                        <li>Lenguaje de Alto Nivel</li>
+                                                        <li>Portable</li>
+                                                        <li>Interpretado</li>
+                                                        <li>Orientado a objetos</li>
+                                                    </ul>
+                                                </div>
+                                        </div> <!-- Fin Textos de artículo-->
+                                        <div class="embed-content"> <!-- Video de Youtube embed -->
+                                                <iframe src="https://www.youtube.com/embed/zR1_43S_G8Q"></iframe>
+                                        </div>
+                                
+                        </article> <!-- Fin artículo -->
+                        <div class="clear"></div>
+
+                        <!-- *********************  SWIFT **************************-->
+                        <article id="swift">
+                                    <img src="images/icons/Swift_logo.jpg" alt="Swift">
+                                        <div>
+                                            <h2>10. Swift</h2>
+                                                <div class="paragraph">
+                                                <p>Swift es un lenguaje de programación multiparadigma creado por Apple enfocado en el desarrollo de aplicaciones para iOS y Mac OS X. Fue presentado en WWDC 20147 y está diseñado para integrarse con los Frameworks Cocoa y Cocoa Touch, puede usar cualquier biblioteca programada en Objective-C y llamar a funciones de C.</p>
+                                                <div><a class="btn-web" href="https://developer.apple.com/swift/">WEB OFICIAL</a> <a class="btn-web" href="#"><i class="fa fa-arrow-up fa-1" aria-hidden="true"></i></a></div>
+                                                </div>
+
+                                                <div class="features">
+                                                    <ul>
+                                                        <li>Cierres unificadas con punteros de función.</li>
+                                                        <li>Múltiples valores de retorno.</li>
+                                                        <li>Iteración rápida y concisa sobre un rango o una colección.</li>
+                                                        <li>Estructuras que soportan métodos, extensiones y protocolos.</li>
+                                                        <li>Patrones de programación como mapas o filtros.</li>
+                                                    </ul>
+                                                </div>
+                                        </div>
+                                        <div class="embed-content">
+                                                <iframe src="https://www.youtube.com/embed/c8BGQ3CfPBs"></iframe>
+                                        </div>                       
+                        </article>
+                        <div class="clear"></div>
+
+             </section> <!-- Fin sección -->
+
+            <aside>
+                    <div class="gotop"> <!-- Flecha fixed para volver siempre al inicio de la página -->
+                        <a href="#"><i class="fa fa-arrow-up fa-1" aria-hidden="true"></i></a>   
+                    </div>
+            </aside>
+               
+            <footer> <!-- Pie de página -->
+                            
+                   <div class="social-footer"> <!-- Primer footer de redes sociales -->
+                        <img src="images/social-footer.png" alt=""/>
+                   </div>
+                           
+                   <div class="greyfooter"> <!-- Segundo footer con información referente a la web -->
+                        <!-- Secciones del Footer -->
+                        <div class="footerbox">
+                            <ul>
+                                <li>PROGRAMACIÓN</li>
+                                <li>PHP</li>
+                                <li>C#</li>
+                                <li>Ajax</li>
+                                <li>Javascript</li>
+                                <li>Perl</li>
+                                <li>C</li>
+                                <li>Java</li>
+                                <li>C++</li>
+                                <li>Python</li>
+                                <li>Swift</li>
+                           </ul>
+                      </div>
+                                
+                      <div class="footerbox">
+                            <ul>
+                                <li>PROGRAMACIÓN</li>
+                                <li>PHP</li>
+                                <li>C#</li>
+                                <li>Ajax</li>
+                                <li>Javascript</li>
+                                <li>Perl</li>
+                                <li>C</li>
+                                <li>Java</li>
+                                <li>C++</li>
+                                <li>Python</li>
+                                <li>Swift</li>
+                           </ul>
+                      </div>
+
+                      <div class="footerbox">
+                            <ul>
+                                <li>PROGRAMACIÓN</li>
+                                <li>PHP</li>
+                                <li>C#</li>
+                                <li>Ajax</li>
+                                <li>Javascript</li>
+                                <li>Perl</li>
+                                <li>C</li>
+                                <li>Java</li>
+                                <li>C++</li>
+                                <li>Python</li>
+                                <li>Swift</li>
+                           </ul>
+                      </div>
+
+                      <div class="footerbox">
+                            <ul>
+                                <li>PROGRAMACIÓN</li>
+                                <li>PHP</li>
+                                <li>C#</li>
+                                <li>Ajax</li>
+                                <li>Javascript</li>
+                                <li>Perl</li>
+                                <li>C</li>
+                                <li>Java</li>
+                                <li>C++</li>
+                                <li>Python</li>
+                                <li>Swift</li>
+                           </ul>
+                      </div>          
+                                                           
+                      <div class="finalbox"> <!-- Textos de final de footer -->
+                            <ul>
+                                <li><a href="#">© Sergio Arranz.</a></li>
+                                <li><a href="#">Información Legal</a></li>                           
+                                <li><a href="#">Política de privacidad</a></li>                            
+                                <li><a href="https://play.google.com/store"><img src="images/icons/googleplay.png" alt="Play Store" /></a></li>                          
+                                <li><a href="https://www.apple.com/itunes/"><img src="images/icons/app_store.png" alt="App Store" /></a></li>
+                            </ul>
+                     </div>
+                </div> <!-- Fin segundo footer -->
+         </footer> <!-- Fin footer -->
+
+         <!-- SCRIPTS -->
+         <script type="text/javascript"> // Script con efecto carrousel que intercala 3 sliders cada 5000 ms (5s)
+              $(function(){
+                 $('#slider div:gt(0)').hide();
+                   setInterval(function(){
+                    $('#slider div:first-child').fadeOut(500)
+                        .next('div').fadeIn(500)
+                    .end().appendTo('#slider');
+                   },5000);
+                        })
+         </script>
+    </body>
+</html>
