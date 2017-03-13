@@ -1,0 +1,46 @@
+﻿{
+  "Actividades": [
+    {
+      "Titulo": "Glosario HTML",
+      "Fecha de realización": "30/10/16",
+      "Descripcion": "Glosario de lenguajes de programación con 10 de los más destacados: breve descripción, foto, características y demostración multimedia de utilización.",
+      "Link": "prj/glosario/",
+      "Miembros grupo": "Sergio Arranz",
+      "Asignaturas relacionadas": "Lenguaje de marcas",
+      "Disponible": "si",
+      "Destacado": true,
+      "Responsive": "no",
+      "Visualización recomendada": "1920x1080",
+      "Foto": "img/glosario.png"
+    },
+
+    {
+      "Titulo": "Web grupal The Shoters",
+      "Fecha de realización": "27/11/16",
+      "Descripcion": "Simulación de la página web de un cibercafé gaming profesional con toda la información acerca de las nuevas tendencias del mercado.",
+      "Link": "prj/theshoters/",
+      "Miembros grupo": "Sergio Arranz, Guillermo Tuvilla, Ramsés Diez",
+      "Asignaturas relacionadas": "Lenguaje de marcas",
+      "Disponible": "si",
+      "Destacado": "no",
+      "Responsive": "no",
+      "Visualización recomendada": "1920x1080",
+      "Foto": "img/webgrupal.png"
+    },
+
+    {
+
+      "Titulo": "Curriculum Vitae",
+      "Fecha de realización": "11/12/16",
+      "Descripcion": "Un resumen acerca de mi: gustos, vida laboral, formación académica, un portfolio con algunos de mis proyectos realizados en las prácticas y una pequeña sección de contacto.",
+      "Link": "prj/CV/",
+      "Miembros grupo": "Sergio Arranz",
+      "Asignaturas relacionadas": "Lenguaje de marcas",
+      "Disponible": "si",
+      "Destacado": "si",
+      "Responsive": "no",
+      "Visualización recomendada": "1920x1080",
+      "Foto": "img/curriculum.png"
+    }
+  ]
+}
